@@ -1,5 +1,5 @@
 curl https://releases.rancher.com/install-docker/20.10.sh | sh
-sudo usermod -aG docker (USER) && newgrp docker
+sudo usermod -aG docker $(whoami) #&& newgrp docker
 sudo systemctl start docker
 sudo service docker status
 
