@@ -4,5 +4,5 @@ sudo systemctl start docker
 sudo service docker status
 
 
-## to remove the docker.
+## to remove the docker
 ##sudo apt-get purge docker-ce docker-ce-cli containerd.io
