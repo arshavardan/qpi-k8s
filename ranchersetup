@@ -1,3 +1,5 @@
 #Command to install rancher engine using docker.
-sudo docker run --privileged -d --restart=unless-stopped -p 80:80 -p 443:443 rancher/rancher:latest
+cd kubernetes/rancher
+mkdir volume
+docker run -d --name rancher-server  -v ${PWD}/volume:/var/lib/rancher --restart=unless-stopped -p 80:80 -p 443:443 --privileged rancher/rancher
 
